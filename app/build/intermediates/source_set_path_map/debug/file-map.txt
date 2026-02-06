@@ -1,0 +1,7 @@
+com.jmarroyo.apdusendercontactless.app-pngs-0 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/generated/res/pngs/debug
+com.jmarroyo.apdusendercontactless.app-resValues-1 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/generated/res/resValues/debug
+com.jmarroyo.apdusendercontactless.app-packageDebugResources-2 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.jmarroyo.apdusendercontactless.app-packageDebugResources-3 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.jmarroyo.apdusendercontactless.app-merged_res-4 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/merged_res/debug
+com.jmarroyo.apdusendercontactless.app-debug-5 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/src/debug/res
+com.jmarroyo.apdusendercontactless.app-main-6 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/src/main/res

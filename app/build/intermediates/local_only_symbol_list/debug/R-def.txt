@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_icc_off
+drawable ic_icc_on
+drawable ic_icc_on_atr
+drawable ic_main_icon
+drawable ic_nfc_off
+drawable ic_nfc_on
+id APDU_spinner_table
+id button_Paste
+id button_SendApdu
+id button_SetNFC
+id check_box_raw
+id editDataIn
+id imageCard
+id imageNfc
+id keyboardview
+id linearLayout1
+id textCard
+id textDataIn
+id textLog
+id textNfc
+layout main
+string app_name
+string button_Paste_name
+string button_SendApdu_name
+string button_SetNFC_name
+string check_box_raw_name
+string textCard_name
+string textDataIn_name
+string textNfc_name
+xml hexkbd
+xml nfc_tech_filter

@@ -1,0 +1,46 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/fei/.gradle/daemon/8.0/com.jmarroyo.apdusendercontactless.app-merged_res-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,14,16,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,677,788,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,51,49,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,724,833,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,116,175,227,279,329,387,454,500,558,608,654,698,742,802,846",
+                        "endColumns": "60,58,51,51,49,57,66,45,57,49,45,43,43,59,43,43",
+                        "endOffsets": "111,170,222,274,324,382,449,495,553,603,649,693,737,797,841,885"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.jmarroyo.apdusendercontactless.app-merged_res-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,116,168,220,270,328,386,436",
+                        "endColumns": "60,51,51,49,57,57,49,59",
+                        "endOffsets": "111,163,215,265,323,381,431,491"
+                    }
+                }
+            ]
+        }
+    ]
+}

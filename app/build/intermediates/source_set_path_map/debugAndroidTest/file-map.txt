@@ -1,0 +1,4 @@
+com.jmarroyo.apdusendercontactless.test.app-androidTest-0 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/generated/res/resValues/androidTest/debug
+com.jmarroyo.apdusendercontactless.test.app-mergeDebugAndroidTestResources-1 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.jmarroyo.apdusendercontactless.test.app-mergeDebugAndroidTestResources-2 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.jmarroyo.apdusendercontactless.test.app-merged_res-3 /home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/merged_res/debugAndroidTest
