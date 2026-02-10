@@ -1,4 +1,5 @@
 /*
+Copyright 2025  Fei Kuan
 Copyright 2014  Jose Maria ARROYO jm.arroyo.castejon@gmail.com
 
 APDUSenderContactLess is free software: you can redistribute it and/or modify
@@ -256,25 +257,25 @@ public class ApduSenderContactLess extends Activity
                         HideKbd();
                         vShowGeneralMesg("Payment System Environment");
                     break;
-                    case 2: //SELECT PPSE
+                    case 2:
                         vSetBuiltinCommand();
                         editDataIn.setText("00a40000021001");
                         HideKbd();
                         vShowGeneralMesg("選擇澳門通0x1001檔案");
                     break;
-                    case 3: //SELECT VISA AID
+                    case 3:
                         vSetBuiltinCommand();
                         editDataIn.setText("00b0950000");
                         HideKbd();
                         vShowGeneralMesg("讀取SFI 0x15");
                     break;
-                    case 4: //SELECT VISA ELECTRON AID
+                    case 4:
                         vSetBuiltinCommand();
                         editDataIn.setText("00b201c5");
                         HideKbd();
                         vShowGeneralMesg("讀取 SFI 0x18");
                     break;
-                    case 5: //SELECT MASTERCARD AID
+                    case 5:
                         vSetBuiltinCommand();
                         editDataIn.setText("00b201bd");
                         HideKbd();
@@ -459,7 +460,6 @@ public class ApduSenderContactLess extends Activity
         try 
         {
             print("***COMMAND APDU***");
-            print("");
             print("IFD - " + getHexString(data));
         } 
         catch (Exception e1) 
@@ -481,8 +481,8 @@ public class ApduSenderContactLess extends Activity
         }
         try
         {
-            print("");
             print("ICC - " + getHexString(ra));
+            print("");
         }
         catch (Exception e1) 
         {
@@ -508,10 +508,24 @@ public class ApduSenderContactLess extends Activity
         return true;
     }
 
+    private static boolean bSendVariableAPDU(String StringAPDU)
+    {
+        HideKbd();
+
+        if ( ((StringAPDU.length()%2)!=0)|| (StringAPDU.length()<1) )
+        {
+            return false;
+        }
+
+        byteAPDU = atohex(StringAPDU);
+        respAPDU = transceives(byteAPDU);
+
+        return true;
+    }
+
     private void resolveIntent(Intent intent) 
     {
         String action = intent.getAction();
-        clearlog();
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action) || NfcAdapter.ACTION_TECH_DISCOVERED.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action))
         {
             Parcelable tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
@@ -533,6 +547,7 @@ public class ApduSenderContactLess extends Activity
             }
             if( myTag.isConnected() )
             {
+                clearlog();
                 if(mShowAtr==true)
                 {
                     icoCard.setImageResource(R.drawable.ic_icc_on_atr);
@@ -541,7 +556,7 @@ public class ApduSenderContactLess extends Activity
                 {
                     icoCard.setImageResource(R.drawable.ic_icc_on);
                 }
-                vShowCardRemovalInfo();
+//                vShowCardRemovalInfo();
                 String szATR = null;
                 try
                 {
@@ -577,6 +592,18 @@ public class ApduSenderContactLess extends Activity
             {
                 icoCard.setImageResource(R.drawable.ic_icc_on);
             }
+
+
+            // Very hard code I don't care
+            if(!bSendVariableAPDU("00A404000E315041592E5359532E4444463031")) {vShowErrorVaules();}
+            if(!bSendVariableAPDU("00a40000021001")) {vShowErrorVaules();}
+            if(!bSendVariableAPDU("00b0950000")) {vShowErrorVaules();}
+            if(!bSendVariableAPDU("00b201c5")) {vShowErrorVaules();}
+            if(!bSendVariableAPDU("00b201bd")) {vShowErrorVaules();}
+
+
+            ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+            clipboard.setText(txtLog.getText());
         }
         else
         {

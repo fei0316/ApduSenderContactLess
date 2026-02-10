@@ -1,4 +1,0 @@
-#Sun Oct 22 04:04:09 CST 2023
-base.0=/home/fei/nfc-fun-code/ApduSenderContactLess-imported/app/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
